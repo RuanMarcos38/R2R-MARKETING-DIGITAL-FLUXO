@@ -2,7 +2,7 @@
 
 Arquivo preparado: `R2R-Atendimento-IA-6-Agentes-ARQUIVO-UNICO-n8n.json`
 
-SHA-256: `44921f127b759c2334fd5a75036863f8c27d31d6d696334bd06a43b497a6c046`
+SHA-256 do arquivo completo para importação: `fa1ea6f10001f4d1c88dba6e7fbd3aca8fab19ff5e913a439de0abc9096ea62e`
 
 ## Estrutura validada
 
