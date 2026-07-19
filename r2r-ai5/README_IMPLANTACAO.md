@@ -28,6 +28,15 @@
 - Follow-up a cada 15 minutos, limitado a registros pendentes.
 - Opt-out com SAIR/PARAR/REMOVER.
 
+## Correção obrigatória para n8n self-hosted / EasyPanel
+O workflow usa `$env` para ler chaves e configurações sem gravá-las dentro do JSON. Se aparecer `access to env vars denied`, adicione no serviço do n8n:
+
+```env
+N8N_BLOCK_ENV_ACCESS_IN_NODE=false
+```
+
+Depois salve e faça **Deploy/Recreate/Restart** do serviço. Não basta apenas reiniciar a execução do workflow. Em instalações com serviços separados, aplique as mesmas variáveis ao n8n principal e aos workers/runners que executam os nodes.
+
 ## Implantação
 1. Execute `SUPABASE_MIGRATION_R2R_AI5.sql` no projeto correto.
 2. Configure as variáveis de `variaveis_ambiente.env.example` no ambiente do n8n.
