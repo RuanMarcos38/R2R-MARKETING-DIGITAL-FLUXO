@@ -1,0 +1,22 @@
+# Checklist de Testes — R2R AI5
+
+- [ ] JSON importa como novo workflow e permanece editável.
+- [ ] Nenhuma credencial aparece embutida no arquivo.
+- [ ] Webhook ignora grupos, mensagens próprias e eventos diferentes de MESSAGES_UPSERT.
+- [ ] A mesma mensagem não gera duas respostas.
+- [ ] Texto simples recebe resposta.
+- [ ] Áudio é transcrito.
+- [ ] Imagem é analisada.
+- [ ] PDF é analisado.
+- [ ] Cada assunto cai no agente correto.
+- [ ] Resposta faz uma pergunta por vez.
+- [ ] O agente não repete informações do histórico.
+- [ ] O agente argumenta valor antes de preço.
+- [ ] Serviço personalizado não recebe preço inventado.
+- [ ] Agendamento consulta conflito antes de criar evento.
+- [ ] Cancelamento pede confirmação e remove evento correto.
+- [ ] Pedido de humano cria handoff e notifica Ruan.
+- [ ] SAIR/PARAR bloqueia follow-up.
+- [ ] Follow-up não envia para contatos em opt-out ou human_mode.
+- [ ] Horários e datas usam America/Sao_Paulo.
+- [ ] Logs de erro do n8n foram revisados após os testes.
