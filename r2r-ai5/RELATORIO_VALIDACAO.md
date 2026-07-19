@@ -1,15 +1,24 @@
 # Relatório de Validação
 
-- Nodes: 85
-- Conexões de origem: 77
+- Nodes: 87
+- Conexões de origem: 79
 - Referências ausentes: 0
 - IDs de nodes únicos: True
 - Workflow ativo na importação: False
 - Credenciais embutidas: não
 - Prefixo exclusivo Supabase: `r2r_ai5_`
 - Arquivos JSON carregáveis: sim
+- Code Nodes validados: 28
+- Code Nodes com erro de sintaxe: 0
+- Consultas com continuidade em resposta vazia: 9
 
 Referências ausentes: `[]`
+
+## Correções de segurança operacional
+- Nova mensagem recebida cancela follow-ups pendentes anteriores.
+- Pedido direto de atendimento humano ativa `human_mode` imediatamente.
+- Follow-up consulta `opt_out` e `human_mode` antes de enviar.
+- Consultas vazias do Supabase e do Google Calendar não interrompem o fluxo.
 
 ## Supabase
 - Migração aplicada: `create_r2r_ai5_isolated_flow`.
